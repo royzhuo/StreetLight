@@ -1,0 +1,1027 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		421EDB0EE219A93A347CBFAA /* libPods-StreetLight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D280871D584BD1FB734AEFE9 /* libPods-StreetLight.a */; };
+		540C18481F29862900620EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540C18461F29862900620EE8 /* Main.storyboard */; };
+		541A6CEB1F39C62900ABEB4A /* LightListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A6CEA1F39C62900ABEB4A /* LightListCell.m */; };
+		541A6CED1F39C66600ABEB4A /* LightListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541A6CEC1F39C66600ABEB4A /* LightListCell.xib */; };
+		541A6CF21F3ABA1500ABEB4A /* Light.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A6CF11F3ABA1500ABEB4A /* Light.m */; };
+		541A6CF51F3AF92400ABEB4A /* UITableView+MoreInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A6CF41F3AF92400ABEB4A /* UITableView+MoreInfo.m */; };
+		541A6CF81F3AFF1D00ABEB4A /* LightInfoUpdateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A6CF71F3AFF1D00ABEB4A /* LightInfoUpdateController.m */; };
+		541A6CFB1F3AFFEB00ABEB4A /* LightDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A6CFA1F3AFFEB00ABEB4A /* LightDetailController.m */; };
+		541A6CFE1F3CBC9300ABEB4A /* CityBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A6CFD1F3CBC9300ABEB4A /* CityBtn.m */; };
+		541A6D031F3D99EB00ABEB4A /* UIButton+IndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A6D021F3D99EB00ABEB4A /* UIButton+IndexPath.m */; };
+		542079181F37F04A0040384B /* SlideMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 542079171F37F04A0040384B /* SlideMenuCell.m */; };
+		542A8F1E1F414835005B2032 /* LightAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A8F1D1F414835005B2032 /* LightAddViewController.m */; };
+		54689DC61F3DA09500F42967 /* ErWeiCodeBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 54689DC51F3DA09500F42967 /* ErWeiCodeBtn.m */; };
+		54689DC91F3DA88300F42967 /* LightInfoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 54689DC81F3DA88300F42967 /* LightInfoTextField.m */; };
+		546A001B1F2B2B2B000F588A /* NSObject+Tips.m in Sources */ = {isa = PBXBuildFile; fileRef = 546A001A1F2B2B2B000F588A /* NSObject+Tips.m */; };
+		546A001F1F2B33DB000F588A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 546A001E1F2B33DB000F588A /* User.m */; };
+		546A00221F2F1502000F588A /* SysInfoUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546A00211F2F1502000F588A /* SysInfoUpdate.m */; };
+		546A00281F304513000F588A /* InfoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 546A00271F304513000F588A /* InfoTextField.m */; };
+		546A002B1F3056DF000F588A /* NSString+Params.m in Sources */ = {isa = PBXBuildFile; fileRef = 546A002A1F3056DF000F588A /* NSString+Params.m */; };
+		546E0E071F40A21A008F6B99 /* ErWeiMaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546E0E061F40A21A008F6B99 /* ErWeiMaViewController.m */; };
+		54805C461F323A2F00C4374C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54805C451F323A2F00C4374C /* MapViewController.m */; };
+		54805C491F323ABF00C4374C /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54805C481F323ABF00C4374C /* ListViewController.m */; };
+		54805C551F3315A400C4374C /* SLScreenEdgePanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 54805C521F3315A400C4374C /* SLScreenEdgePanGestureRecognizer.m */; };
+		54805C561F3315A400C4374C /* SLSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 54805C541F3315A400C4374C /* SLSlideMenu.m */; };
+		54805C5A1F3469B200C4374C /* Privince.m in Sources */ = {isa = PBXBuildFile; fileRef = 54805C591F3469B200C4374C /* Privince.m */; };
+		54805C5D1F346A4700C4374C /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = 54805C5C1F346A4700C4374C /* Cities.m */; };
+		54805C601F346AFB00C4374C /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = 54805C5F1F346AFB00C4374C /* Area.m */; };
+		548CCB211F42C1B0006C2397 /* LightType.m in Sources */ = {isa = PBXBuildFile; fileRef = 548CCB201F42C1B0006C2397 /* LightType.m */; };
+		548FB0BC1F46CDD30053EE89 /* LightControllCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 548FB0BB1F46CDD30053EE89 /* LightControllCell.m */; };
+		548FB0BF1F4A6CBA0053EE89 /* AllWarnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 548FB0BE1F4A6CBA0053EE89 /* AllWarnViewController.m */; };
+		548FB0C21F4A6EAD0053EE89 /* UrgenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 548FB0C11F4A6EAD0053EE89 /* UrgenViewController.m */; };
+		548FB0C51F4A6EBE0053EE89 /* NormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 548FB0C41F4A6EBE0053EE89 /* NormalViewController.m */; };
+		548FB0C71F4A85A10053EE89 /* WarnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548FB0C61F4A85A10053EE89 /* WarnCell.xib */; };
+		548FB0CA1F4A891C0053EE89 /* WarnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 548FB0C91F4A891C0053EE89 /* WarnCell.m */; };
+		548FB0CD1F4A89FD0053EE89 /* Warn.m in Sources */ = {isa = PBXBuildFile; fileRef = 548FB0CC1F4A89FD0053EE89 /* Warn.m */; };
+		549EDC661F613C9A00D043A1 /* TokenException.m in Sources */ = {isa = PBXBuildFile; fileRef = 549EDC651F613C9A00D043A1 /* TokenException.m */; };
+		54A374041F4436A1006756B8 /* LightStateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54A374031F4436A1006756B8 /* LightStateCell.xib */; };
+		54A374071F443813006756B8 /* LightStateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A374061F443813006756B8 /* LightStateCell.m */; };
+		54A3740A1F4568B6006756B8 /* MenuGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A374091F4568B6006756B8 /* MenuGroup.m */; };
+		54AAB8C61F2865B1009F62D5 /* ViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AAB8C51F2865B1009F62D5 /* ViewTool.m */; };
+		54AAB8C81F286788009F62D5 /* LightManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AAB8C71F286788009F62D5 /* LightManager.storyboard */; };
+		54AAB8CA1F2867A9009F62D5 /* LightControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AAB8C91F2867A9009F62D5 /* LightControl.storyboard */; };
+		54AAB8CC1F2867BB009F62D5 /* WarnWatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AAB8CB1F2867BB009F62D5 /* WarnWatch.storyboard */; };
+		54AAB8CE1F2867CC009F62D5 /* SystemSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AAB8CD1F2867CC009F62D5 /* SystemSetting.storyboard */; };
+		54AAB8D21F286AE0009F62D5 /* LightManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AAB8D11F286AE0009F62D5 /* LightManagerController.m */; };
+		54AAB8D51F286B5A009F62D5 /* LightControlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AAB8D41F286B5A009F62D5 /* LightControlController.m */; };
+		54AAB8D81F286BA8009F62D5 /* WarnWatchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AAB8D71F286BA8009F62D5 /* WarnWatchController.m */; };
+		54AAB8DB1F286C0C009F62D5 /* SysSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AAB8DA1F286C0C009F62D5 /* SysSettingController.m */; };
+		54AAB8E31F286E6B009F62D5 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AAB8E21F286E6B009F62D5 /* LoginController.m */; };
+		54AAB8E71F286F0D009F62D5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AAB8E61F286F0D009F62D5 /* Login.storyboard */; };
+		54AB64061F4D1EC400FB393B /* SlideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AB64051F4D1EC400FB393B /* SlideMenuCell.xib */; };
+		54B4930E1F430BD60053A951 /* LightMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B4930D1F430BD60053A951 /* LightMap.m */; };
+		54B493111F4367A40053A951 /* SlideMenuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B493101F4367A40053A951 /* SlideMenuesViewController.m */; };
+		54C81EE61F274B2F007AB63D /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C81EE51F274B2F007AB63D /* HttpTool.m */; };
+		54D9DD801F2714000085B4DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D9DD7F1F2714000085B4DA /* main.m */; };
+		54D9DD831F2714000085B4DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D9DD821F2714000085B4DA /* AppDelegate.m */; };
+		54D9DD8C1F2714000085B4DA /* StreetLight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54D9DD8A1F2714000085B4DA /* StreetLight.xcdatamodeld */; };
+		54D9DD8E1F2714000085B4DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54D9DD8D1F2714000085B4DA /* Assets.xcassets */; };
+		54D9DD911F2714000085B4DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D9DD8F1F2714000085B4DA /* LaunchScreen.storyboard */; };
+		54D9DD9C1F2714000085B4DA /* StreetLightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D9DD9B1F2714000085B4DA /* StreetLightTests.m */; };
+		54D9DDA71F2714000085B4DA /* StreetLightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D9DDA61F2714000085B4DA /* StreetLightUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54D9DD981F2714000085B4DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54D9DD731F2714000085B4DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54D9DD7A1F2714000085B4DA;
+			remoteInfo = StreetLight;
+		};
+		54D9DDA31F2714000085B4DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54D9DD731F2714000085B4DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54D9DD7A1F2714000085B4DA;
+			remoteInfo = StreetLight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		540C18471F29862900620EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		541A6CE91F39C62900ABEB4A /* LightListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightListCell.h; sourceTree = "<group>"; };
+		541A6CEA1F39C62900ABEB4A /* LightListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightListCell.m; sourceTree = "<group>"; };
+		541A6CEC1F39C66600ABEB4A /* LightListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LightListCell.xib; sourceTree = "<group>"; };
+		541A6CF01F3ABA1500ABEB4A /* Light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Light.h; sourceTree = "<group>"; };
+		541A6CF11F3ABA1500ABEB4A /* Light.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Light.m; sourceTree = "<group>"; };
+		541A6CF31F3AF92400ABEB4A /* UITableView+MoreInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+MoreInfo.h"; sourceTree = "<group>"; };
+		541A6CF41F3AF92400ABEB4A /* UITableView+MoreInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+MoreInfo.m"; sourceTree = "<group>"; };
+		541A6CF61F3AFF1D00ABEB4A /* LightInfoUpdateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightInfoUpdateController.h; sourceTree = "<group>"; };
+		541A6CF71F3AFF1D00ABEB4A /* LightInfoUpdateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightInfoUpdateController.m; sourceTree = "<group>"; };
+		541A6CF91F3AFFEB00ABEB4A /* LightDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightDetailController.h; sourceTree = "<group>"; };
+		541A6CFA1F3AFFEB00ABEB4A /* LightDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightDetailController.m; sourceTree = "<group>"; };
+		541A6CFC1F3CBC9300ABEB4A /* CityBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityBtn.h; sourceTree = "<group>"; };
+		541A6CFD1F3CBC9300ABEB4A /* CityBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityBtn.m; sourceTree = "<group>"; };
+		541A6D011F3D99EB00ABEB4A /* UIButton+IndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+IndexPath.h"; sourceTree = "<group>"; };
+		541A6D021F3D99EB00ABEB4A /* UIButton+IndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+IndexPath.m"; sourceTree = "<group>"; };
+		542079161F37F04A0040384B /* SlideMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuCell.h; sourceTree = "<group>"; };
+		542079171F37F04A0040384B /* SlideMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuCell.m; sourceTree = "<group>"; };
+		542A8F1C1F414835005B2032 /* LightAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightAddViewController.h; sourceTree = "<group>"; };
+		542A8F1D1F414835005B2032 /* LightAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightAddViewController.m; sourceTree = "<group>"; };
+		54689DC41F3DA09500F42967 /* ErWeiCodeBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErWeiCodeBtn.h; sourceTree = "<group>"; };
+		54689DC51F3DA09500F42967 /* ErWeiCodeBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErWeiCodeBtn.m; sourceTree = "<group>"; };
+		54689DC71F3DA88300F42967 /* LightInfoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightInfoTextField.h; sourceTree = "<group>"; };
+		54689DC81F3DA88300F42967 /* LightInfoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightInfoTextField.m; sourceTree = "<group>"; };
+		546A00191F2B2B2B000F588A /* NSObject+Tips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Tips.h"; sourceTree = "<group>"; };
+		546A001A1F2B2B2B000F588A /* NSObject+Tips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Tips.m"; sourceTree = "<group>"; };
+		546A001D1F2B33DB000F588A /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		546A001E1F2B33DB000F588A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		546A00201F2F1502000F588A /* SysInfoUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysInfoUpdate.h; sourceTree = "<group>"; };
+		546A00211F2F1502000F588A /* SysInfoUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysInfoUpdate.m; sourceTree = "<group>"; };
+		546A00261F304513000F588A /* InfoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTextField.h; sourceTree = "<group>"; };
+		546A00271F304513000F588A /* InfoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTextField.m; sourceTree = "<group>"; };
+		546A00291F3056DF000F588A /* NSString+Params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Params.h"; sourceTree = "<group>"; };
+		546A002A1F3056DF000F588A /* NSString+Params.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Params.m"; sourceTree = "<group>"; };
+		546E0E051F40A21A008F6B99 /* ErWeiMaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErWeiMaViewController.h; sourceTree = "<group>"; };
+		546E0E061F40A21A008F6B99 /* ErWeiMaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErWeiMaViewController.m; sourceTree = "<group>"; };
+		54805C441F323A2F00C4374C /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		54805C451F323A2F00C4374C /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		54805C471F323ABF00C4374C /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		54805C481F323ABF00C4374C /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		54805C511F3315A400C4374C /* SLScreenEdgePanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLScreenEdgePanGestureRecognizer.h; sourceTree = "<group>"; };
+		54805C521F3315A400C4374C /* SLScreenEdgePanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLScreenEdgePanGestureRecognizer.m; sourceTree = "<group>"; };
+		54805C531F3315A400C4374C /* SLSlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLSlideMenu.h; sourceTree = "<group>"; };
+		54805C541F3315A400C4374C /* SLSlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLSlideMenu.m; sourceTree = "<group>"; };
+		54805C581F3469B200C4374C /* Privince.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Privince.h; sourceTree = "<group>"; };
+		54805C591F3469B200C4374C /* Privince.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Privince.m; sourceTree = "<group>"; };
+		54805C5B1F346A4700C4374C /* Cities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cities.h; sourceTree = "<group>"; };
+		54805C5C1F346A4700C4374C /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cities.m; sourceTree = "<group>"; };
+		54805C5E1F346AFB00C4374C /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
+		54805C5F1F346AFB00C4374C /* Area.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Area.m; sourceTree = "<group>"; };
+		548CCB1F1F42C1B0006C2397 /* LightType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightType.h; sourceTree = "<group>"; };
+		548CCB201F42C1B0006C2397 /* LightType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightType.m; sourceTree = "<group>"; };
+		548FB0BA1F46CDD30053EE89 /* LightControllCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightControllCell.h; sourceTree = "<group>"; };
+		548FB0BB1F46CDD30053EE89 /* LightControllCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightControllCell.m; sourceTree = "<group>"; };
+		548FB0BD1F4A6CBA0053EE89 /* AllWarnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllWarnViewController.h; sourceTree = "<group>"; };
+		548FB0BE1F4A6CBA0053EE89 /* AllWarnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllWarnViewController.m; sourceTree = "<group>"; };
+		548FB0C01F4A6EAD0053EE89 /* UrgenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrgenViewController.h; sourceTree = "<group>"; };
+		548FB0C11F4A6EAD0053EE89 /* UrgenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrgenViewController.m; sourceTree = "<group>"; };
+		548FB0C31F4A6EBE0053EE89 /* NormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalViewController.h; sourceTree = "<group>"; };
+		548FB0C41F4A6EBE0053EE89 /* NormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalViewController.m; sourceTree = "<group>"; };
+		548FB0C61F4A85A10053EE89 /* WarnCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WarnCell.xib; sourceTree = "<group>"; };
+		548FB0C81F4A891C0053EE89 /* WarnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarnCell.h; sourceTree = "<group>"; };
+		548FB0C91F4A891C0053EE89 /* WarnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarnCell.m; sourceTree = "<group>"; };
+		548FB0CB1F4A89FD0053EE89 /* Warn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Warn.h; sourceTree = "<group>"; };
+		548FB0CC1F4A89FD0053EE89 /* Warn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Warn.m; sourceTree = "<group>"; };
+		549EDC641F613C9A00D043A1 /* TokenException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenException.h; sourceTree = "<group>"; };
+		549EDC651F613C9A00D043A1 /* TokenException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenException.m; sourceTree = "<group>"; };
+		54A374031F4436A1006756B8 /* LightStateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LightStateCell.xib; sourceTree = "<group>"; };
+		54A374051F443813006756B8 /* LightStateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightStateCell.h; sourceTree = "<group>"; };
+		54A374061F443813006756B8 /* LightStateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightStateCell.m; sourceTree = "<group>"; };
+		54A374081F4568B6006756B8 /* MenuGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuGroup.h; sourceTree = "<group>"; };
+		54A374091F4568B6006756B8 /* MenuGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuGroup.m; sourceTree = "<group>"; };
+		54AAB8C41F2865B1009F62D5 /* ViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTool.h; sourceTree = "<group>"; };
+		54AAB8C51F2865B1009F62D5 /* ViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTool.m; sourceTree = "<group>"; };
+		54AAB8C71F286788009F62D5 /* LightManager.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LightManager.storyboard; sourceTree = "<group>"; };
+		54AAB8C91F2867A9009F62D5 /* LightControl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LightControl.storyboard; sourceTree = "<group>"; };
+		54AAB8CB1F2867BB009F62D5 /* WarnWatch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WarnWatch.storyboard; sourceTree = "<group>"; };
+		54AAB8CD1F2867CC009F62D5 /* SystemSetting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SystemSetting.storyboard; sourceTree = "<group>"; };
+		54AAB8D01F286AE0009F62D5 /* LightManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightManagerController.h; sourceTree = "<group>"; };
+		54AAB8D11F286AE0009F62D5 /* LightManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightManagerController.m; sourceTree = "<group>"; };
+		54AAB8D31F286B5A009F62D5 /* LightControlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightControlController.h; sourceTree = "<group>"; };
+		54AAB8D41F286B5A009F62D5 /* LightControlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightControlController.m; sourceTree = "<group>"; };
+		54AAB8D61F286BA8009F62D5 /* WarnWatchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarnWatchController.h; sourceTree = "<group>"; };
+		54AAB8D71F286BA8009F62D5 /* WarnWatchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarnWatchController.m; sourceTree = "<group>"; };
+		54AAB8D91F286C0C009F62D5 /* SysSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysSettingController.h; sourceTree = "<group>"; };
+		54AAB8DA1F286C0C009F62D5 /* SysSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysSettingController.m; sourceTree = "<group>"; };
+		54AAB8E11F286E6B009F62D5 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		54AAB8E21F286E6B009F62D5 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		54AAB8E61F286F0D009F62D5 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		54AB64051F4D1EC400FB393B /* SlideMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlideMenuCell.xib; sourceTree = "<group>"; };
+		54B4930C1F430BD60053A951 /* LightMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightMap.h; sourceTree = "<group>"; };
+		54B4930D1F430BD60053A951 /* LightMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightMap.m; sourceTree = "<group>"; };
+		54B4930F1F4367A40053A951 /* SlideMenuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuesViewController.h; sourceTree = "<group>"; };
+		54B493101F4367A40053A951 /* SlideMenuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuesViewController.m; sourceTree = "<group>"; };
+		54C81EE01F2740E7007AB63D /* StreetLight.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreetLight.pch; sourceTree = "<group>"; };
+		54C81EE21F2742FB007AB63D /* LightInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightInterface.h; sourceTree = "<group>"; };
+		54C81EE41F274B2F007AB63D /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		54C81EE51F274B2F007AB63D /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		54C81EE71F274C99007AB63D /* tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tool.h; sourceTree = "<group>"; };
+		54D9DD7B1F2714000085B4DA /* StreetLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D9DD7F1F2714000085B4DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54D9DD811F2714000085B4DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		54D9DD821F2714000085B4DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		54D9DD8B1F2714000085B4DA /* StreetLight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StreetLight.xcdatamodel; sourceTree = "<group>"; };
+		54D9DD8D1F2714000085B4DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54D9DD901F2714000085B4DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54D9DD921F2714000085B4DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54D9DD971F2714000085B4DA /* StreetLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreetLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D9DD9B1F2714000085B4DA /* StreetLightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreetLightTests.m; sourceTree = "<group>"; };
+		54D9DD9D1F2714000085B4DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54D9DDA21F2714000085B4DA /* StreetLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreetLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D9DDA61F2714000085B4DA /* StreetLightUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreetLightUITests.m; sourceTree = "<group>"; };
+		54D9DDA81F2714000085B4DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8570F89D0EEA367E479BBF96 /* Pods-StreetLight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetLight.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreetLight/Pods-StreetLight.release.xcconfig"; sourceTree = "<group>"; };
+		9BC40CACF3785F726E3CD771 /* Pods-StreetLight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetLight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreetLight/Pods-StreetLight.debug.xcconfig"; sourceTree = "<group>"; };
+		D280871D584BD1FB734AEFE9 /* libPods-StreetLight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StreetLight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54D9DD781F2714000085B4DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421EDB0EE219A93A347CBFAA /* libPods-StreetLight.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D9DD941F2714000085B4DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D9DD9F1F2714000085B4DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		542079131F37EFC00040384B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				542079161F37F04A0040384B /* SlideMenuCell.h */,
+				542079171F37F04A0040384B /* SlideMenuCell.m */,
+				541A6CE91F39C62900ABEB4A /* LightListCell.h */,
+				541A6CEA1F39C62900ABEB4A /* LightListCell.m */,
+				541A6CEC1F39C66600ABEB4A /* LightListCell.xib */,
+				541A6CFC1F3CBC9300ABEB4A /* CityBtn.h */,
+				541A6CFD1F3CBC9300ABEB4A /* CityBtn.m */,
+				54689DC41F3DA09500F42967 /* ErWeiCodeBtn.h */,
+				54689DC51F3DA09500F42967 /* ErWeiCodeBtn.m */,
+				54A374031F4436A1006756B8 /* LightStateCell.xib */,
+				54A374051F443813006756B8 /* LightStateCell.h */,
+				54A374061F443813006756B8 /* LightStateCell.m */,
+				548FB0BA1F46CDD30053EE89 /* LightControllCell.h */,
+				548FB0BB1F46CDD30053EE89 /* LightControllCell.m */,
+				548FB0C61F4A85A10053EE89 /* WarnCell.xib */,
+				548FB0C81F4A891C0053EE89 /* WarnCell.h */,
+				548FB0C91F4A891C0053EE89 /* WarnCell.m */,
+				54AB64051F4D1EC400FB393B /* SlideMenuCell.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		546A001C1F2B317E000F588A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				546A001D1F2B33DB000F588A /* User.h */,
+				546A001E1F2B33DB000F588A /* User.m */,
+				54805C581F3469B200C4374C /* Privince.h */,
+				54805C591F3469B200C4374C /* Privince.m */,
+				54805C5B1F346A4700C4374C /* Cities.h */,
+				54805C5C1F346A4700C4374C /* Cities.m */,
+				54805C5E1F346AFB00C4374C /* Area.h */,
+				54805C5F1F346AFB00C4374C /* Area.m */,
+				541A6CF01F3ABA1500ABEB4A /* Light.h */,
+				541A6CF11F3ABA1500ABEB4A /* Light.m */,
+				548CCB1F1F42C1B0006C2397 /* LightType.h */,
+				548CCB201F42C1B0006C2397 /* LightType.m */,
+				54B4930C1F430BD60053A951 /* LightMap.h */,
+				54B4930D1F430BD60053A951 /* LightMap.m */,
+				54A374081F4568B6006756B8 /* MenuGroup.h */,
+				54A374091F4568B6006756B8 /* MenuGroup.m */,
+				548FB0CB1F4A89FD0053EE89 /* Warn.h */,
+				548FB0CC1F4A89FD0053EE89 /* Warn.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		54805C501F3315A400C4374C /* SLSlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				54805C511F3315A400C4374C /* SLScreenEdgePanGestureRecognizer.h */,
+				54805C521F3315A400C4374C /* SLScreenEdgePanGestureRecognizer.m */,
+				54805C531F3315A400C4374C /* SLSlideMenu.h */,
+				54805C541F3315A400C4374C /* SLSlideMenu.m */,
+			);
+			path = SLSlideMenu;
+			sourceTree = "<group>";
+		};
+		54AAB8CF1F286A9F009F62D5 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				54AAB8E01F286E59009F62D5 /* login */,
+				54AAB8DF1F286E41009F62D5 /* system */,
+				54AAB8DE1F286E32009F62D5 /* warn */,
+				54AAB8DD1F286E0C009F62D5 /* lightControl */,
+				54AAB8DC1F286DF2009F62D5 /* lightManger */,
+			);
+			name = viewController;
+			sourceTree = "<group>";
+		};
+		54AAB8DC1F286DF2009F62D5 /* lightManger */ = {
+			isa = PBXGroup;
+			children = (
+				54AAB8D01F286AE0009F62D5 /* LightManagerController.h */,
+				54AAB8D11F286AE0009F62D5 /* LightManagerController.m */,
+				54805C441F323A2F00C4374C /* MapViewController.h */,
+				54805C451F323A2F00C4374C /* MapViewController.m */,
+				54805C471F323ABF00C4374C /* ListViewController.h */,
+				54805C481F323ABF00C4374C /* ListViewController.m */,
+				541A6CF61F3AFF1D00ABEB4A /* LightInfoUpdateController.h */,
+				541A6CF71F3AFF1D00ABEB4A /* LightInfoUpdateController.m */,
+				541A6CF91F3AFFEB00ABEB4A /* LightDetailController.h */,
+				541A6CFA1F3AFFEB00ABEB4A /* LightDetailController.m */,
+				546E0E051F40A21A008F6B99 /* ErWeiMaViewController.h */,
+				546E0E061F40A21A008F6B99 /* ErWeiMaViewController.m */,
+				542A8F1C1F414835005B2032 /* LightAddViewController.h */,
+				542A8F1D1F414835005B2032 /* LightAddViewController.m */,
+			);
+			name = lightManger;
+			sourceTree = "<group>";
+		};
+		54AAB8DD1F286E0C009F62D5 /* lightControl */ = {
+			isa = PBXGroup;
+			children = (
+				54AAB8D31F286B5A009F62D5 /* LightControlController.h */,
+				54AAB8D41F286B5A009F62D5 /* LightControlController.m */,
+				54B4930F1F4367A40053A951 /* SlideMenuesViewController.h */,
+				54B493101F4367A40053A951 /* SlideMenuesViewController.m */,
+			);
+			name = lightControl;
+			sourceTree = "<group>";
+		};
+		54AAB8DE1F286E32009F62D5 /* warn */ = {
+			isa = PBXGroup;
+			children = (
+				54AAB8D61F286BA8009F62D5 /* WarnWatchController.h */,
+				54AAB8D71F286BA8009F62D5 /* WarnWatchController.m */,
+				548FB0BD1F4A6CBA0053EE89 /* AllWarnViewController.h */,
+				548FB0BE1F4A6CBA0053EE89 /* AllWarnViewController.m */,
+				548FB0C01F4A6EAD0053EE89 /* UrgenViewController.h */,
+				548FB0C11F4A6EAD0053EE89 /* UrgenViewController.m */,
+				548FB0C31F4A6EBE0053EE89 /* NormalViewController.h */,
+				548FB0C41F4A6EBE0053EE89 /* NormalViewController.m */,
+			);
+			name = warn;
+			sourceTree = "<group>";
+		};
+		54AAB8DF1F286E41009F62D5 /* system */ = {
+			isa = PBXGroup;
+			children = (
+				54AAB8D91F286C0C009F62D5 /* SysSettingController.h */,
+				54AAB8DA1F286C0C009F62D5 /* SysSettingController.m */,
+				546A00201F2F1502000F588A /* SysInfoUpdate.h */,
+				546A00211F2F1502000F588A /* SysInfoUpdate.m */,
+			);
+			name = system;
+			sourceTree = "<group>";
+		};
+		54AAB8E01F286E59009F62D5 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				54AAB8E11F286E6B009F62D5 /* LoginController.h */,
+				54AAB8E21F286E6B009F62D5 /* LoginController.m */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		54C81EE11F2742DD007AB63D /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				54C81EE21F2742FB007AB63D /* LightInterface.h */,
+			);
+			name = interface;
+			sourceTree = "<group>";
+		};
+		54C81EE31F274AF1007AB63D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				54C81EE41F274B2F007AB63D /* HttpTool.h */,
+				54C81EE51F274B2F007AB63D /* HttpTool.m */,
+				54C81EE71F274C99007AB63D /* tool.h */,
+				54AAB8C41F2865B1009F62D5 /* ViewTool.h */,
+				54AAB8C51F2865B1009F62D5 /* ViewTool.m */,
+				546A00191F2B2B2B000F588A /* NSObject+Tips.h */,
+				546A001A1F2B2B2B000F588A /* NSObject+Tips.m */,
+				546A00261F304513000F588A /* InfoTextField.h */,
+				546A00271F304513000F588A /* InfoTextField.m */,
+				546A00291F3056DF000F588A /* NSString+Params.h */,
+				546A002A1F3056DF000F588A /* NSString+Params.m */,
+				541A6CF31F3AF92400ABEB4A /* UITableView+MoreInfo.h */,
+				541A6CF41F3AF92400ABEB4A /* UITableView+MoreInfo.m */,
+				541A6D011F3D99EB00ABEB4A /* UIButton+IndexPath.h */,
+				541A6D021F3D99EB00ABEB4A /* UIButton+IndexPath.m */,
+				54689DC71F3DA88300F42967 /* LightInfoTextField.h */,
+				54689DC81F3DA88300F42967 /* LightInfoTextField.m */,
+				549EDC641F613C9A00D043A1 /* TokenException.h */,
+				549EDC651F613C9A00D043A1 /* TokenException.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		54D9DD721F2714000085B4DA = {
+			isa = PBXGroup;
+			children = (
+				542079131F37EFC00040384B /* view */,
+				54805C501F3315A400C4374C /* SLSlideMenu */,
+				546A001C1F2B317E000F588A /* model */,
+				54AAB8CF1F286A9F009F62D5 /* viewController */,
+				54C81EE31F274AF1007AB63D /* Tool */,
+				54C81EE11F2742DD007AB63D /* interface */,
+				54D9DD7D1F2714000085B4DA /* StreetLight */,
+				54D9DD9A1F2714000085B4DA /* StreetLightTests */,
+				54D9DDA51F2714000085B4DA /* StreetLightUITests */,
+				54D9DD7C1F2714000085B4DA /* Products */,
+				B60B577ADB1B215FAECEE4DA /* Pods */,
+				DA05476733D71983C9F9622B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		54D9DD7C1F2714000085B4DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54D9DD7B1F2714000085B4DA /* StreetLight.app */,
+				54D9DD971F2714000085B4DA /* StreetLightTests.xctest */,
+				54D9DDA21F2714000085B4DA /* StreetLightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54D9DD7D1F2714000085B4DA /* StreetLight */ = {
+			isa = PBXGroup;
+			children = (
+				540C18461F29862900620EE8 /* Main.storyboard */,
+				54D9DD811F2714000085B4DA /* AppDelegate.h */,
+				54D9DD821F2714000085B4DA /* AppDelegate.m */,
+				54D9DD8D1F2714000085B4DA /* Assets.xcassets */,
+				54D9DD8F1F2714000085B4DA /* LaunchScreen.storyboard */,
+				54D9DD921F2714000085B4DA /* Info.plist */,
+				54D9DD8A1F2714000085B4DA /* StreetLight.xcdatamodeld */,
+				54D9DD7E1F2714000085B4DA /* Supporting Files */,
+				54AAB8C71F286788009F62D5 /* LightManager.storyboard */,
+				54AAB8C91F2867A9009F62D5 /* LightControl.storyboard */,
+				54AAB8CB1F2867BB009F62D5 /* WarnWatch.storyboard */,
+				54AAB8CD1F2867CC009F62D5 /* SystemSetting.storyboard */,
+				54AAB8E61F286F0D009F62D5 /* Login.storyboard */,
+			);
+			path = StreetLight;
+			sourceTree = "<group>";
+		};
+		54D9DD7E1F2714000085B4DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54D9DD7F1F2714000085B4DA /* main.m */,
+				54C81EE01F2740E7007AB63D /* StreetLight.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54D9DD9A1F2714000085B4DA /* StreetLightTests */ = {
+			isa = PBXGroup;
+			children = (
+				54D9DD9B1F2714000085B4DA /* StreetLightTests.m */,
+				54D9DD9D1F2714000085B4DA /* Info.plist */,
+			);
+			path = StreetLightTests;
+			sourceTree = "<group>";
+		};
+		54D9DDA51F2714000085B4DA /* StreetLightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54D9DDA61F2714000085B4DA /* StreetLightUITests.m */,
+				54D9DDA81F2714000085B4DA /* Info.plist */,
+			);
+			path = StreetLightUITests;
+			sourceTree = "<group>";
+		};
+		B60B577ADB1B215FAECEE4DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BC40CACF3785F726E3CD771 /* Pods-StreetLight.debug.xcconfig */,
+				8570F89D0EEA367E479BBF96 /* Pods-StreetLight.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA05476733D71983C9F9622B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D280871D584BD1FB734AEFE9 /* libPods-StreetLight.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54D9DD7A1F2714000085B4DA /* StreetLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D9DDAB1F2714000085B4DA /* Build configuration list for PBXNativeTarget "StreetLight" */;
+			buildPhases = (
+				52D9E5EE3600EE596B1A9417 /* [CP] Check Pods Manifest.lock */,
+				54D9DD771F2714000085B4DA /* Sources */,
+				54D9DD781F2714000085B4DA /* Frameworks */,
+				54D9DD791F2714000085B4DA /* Resources */,
+				E7AD32F027261F5725E3FB65 /* [CP] Embed Pods Frameworks */,
+				D9022BB54082C05AA6D47148 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StreetLight;
+			productName = StreetLight;
+			productReference = 54D9DD7B1F2714000085B4DA /* StreetLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54D9DD961F2714000085B4DA /* StreetLightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D9DDAE1F2714000085B4DA /* Build configuration list for PBXNativeTarget "StreetLightTests" */;
+			buildPhases = (
+				54D9DD931F2714000085B4DA /* Sources */,
+				54D9DD941F2714000085B4DA /* Frameworks */,
+				54D9DD951F2714000085B4DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54D9DD991F2714000085B4DA /* PBXTargetDependency */,
+			);
+			name = StreetLightTests;
+			productName = StreetLightTests;
+			productReference = 54D9DD971F2714000085B4DA /* StreetLightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54D9DDA11F2714000085B4DA /* StreetLightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D9DDB11F2714000085B4DA /* Build configuration list for PBXNativeTarget "StreetLightUITests" */;
+			buildPhases = (
+				54D9DD9E1F2714000085B4DA /* Sources */,
+				54D9DD9F1F2714000085B4DA /* Frameworks */,
+				54D9DDA01F2714000085B4DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54D9DDA41F2714000085B4DA /* PBXTargetDependency */,
+			);
+			name = StreetLightUITests;
+			productName = StreetLightUITests;
+			productReference = 54D9DDA21F2714000085B4DA /* StreetLightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54D9DD731F2714000085B4DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = street;
+				TargetAttributes = {
+					54D9DD7A1F2714000085B4DA = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8XLVBU7S63;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					54D9DD961F2714000085B4DA = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 54D9DD7A1F2714000085B4DA;
+					};
+					54D9DDA11F2714000085B4DA = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 54D9DD7A1F2714000085B4DA;
+					};
+				};
+			};
+			buildConfigurationList = 54D9DD761F2714000085B4DA /* Build configuration list for PBXProject "StreetLight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54D9DD721F2714000085B4DA;
+			productRefGroup = 54D9DD7C1F2714000085B4DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54D9DD7A1F2714000085B4DA /* StreetLight */,
+				54D9DD961F2714000085B4DA /* StreetLightTests */,
+				54D9DDA11F2714000085B4DA /* StreetLightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54D9DD791F2714000085B4DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54A374041F4436A1006756B8 /* LightStateCell.xib in Resources */,
+				54AAB8E71F286F0D009F62D5 /* Login.storyboard in Resources */,
+				54AAB8CA1F2867A9009F62D5 /* LightControl.storyboard in Resources */,
+				54AAB8CE1F2867CC009F62D5 /* SystemSetting.storyboard in Resources */,
+				548FB0C71F4A85A10053EE89 /* WarnCell.xib in Resources */,
+				540C18481F29862900620EE8 /* Main.storyboard in Resources */,
+				54D9DD911F2714000085B4DA /* LaunchScreen.storyboard in Resources */,
+				54AAB8CC1F2867BB009F62D5 /* WarnWatch.storyboard in Resources */,
+				54AB64061F4D1EC400FB393B /* SlideMenuCell.xib in Resources */,
+				541A6CED1F39C66600ABEB4A /* LightListCell.xib in Resources */,
+				54AAB8C81F286788009F62D5 /* LightManager.storyboard in Resources */,
+				54D9DD8E1F2714000085B4DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D9DD951F2714000085B4DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D9DDA01F2714000085B4DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52D9E5EE3600EE596B1A9417 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StreetLight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9022BB54082C05AA6D47148 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StreetLight/Pods-StreetLight-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StreetLight/Pods-StreetLight-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7AD32F027261F5725E3FB65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StreetLight/Pods-StreetLight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54D9DD771F2714000085B4DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				548FB0CD1F4A89FD0053EE89 /* Warn.m in Sources */,
+				54AAB8D51F286B5A009F62D5 /* LightControlController.m in Sources */,
+				548FB0CA1F4A891C0053EE89 /* WarnCell.m in Sources */,
+				54AAB8E31F286E6B009F62D5 /* LoginController.m in Sources */,
+				54AAB8DB1F286C0C009F62D5 /* SysSettingController.m in Sources */,
+				54D9DD831F2714000085B4DA /* AppDelegate.m in Sources */,
+				541A6CF21F3ABA1500ABEB4A /* Light.m in Sources */,
+				541A6CFB1F3AFFEB00ABEB4A /* LightDetailController.m in Sources */,
+				54AAB8C61F2865B1009F62D5 /* ViewTool.m in Sources */,
+				548FB0BF1F4A6CBA0053EE89 /* AllWarnViewController.m in Sources */,
+				548FB0C21F4A6EAD0053EE89 /* UrgenViewController.m in Sources */,
+				54805C551F3315A400C4374C /* SLScreenEdgePanGestureRecognizer.m in Sources */,
+				546A00281F304513000F588A /* InfoTextField.m in Sources */,
+				549EDC661F613C9A00D043A1 /* TokenException.m in Sources */,
+				54805C5A1F3469B200C4374C /* Privince.m in Sources */,
+				54D9DD801F2714000085B4DA /* main.m in Sources */,
+				546E0E071F40A21A008F6B99 /* ErWeiMaViewController.m in Sources */,
+				541A6CF51F3AF92400ABEB4A /* UITableView+MoreInfo.m in Sources */,
+				54805C491F323ABF00C4374C /* ListViewController.m in Sources */,
+				541A6CEB1F39C62900ABEB4A /* LightListCell.m in Sources */,
+				54805C561F3315A400C4374C /* SLSlideMenu.m in Sources */,
+				54B493111F4367A40053A951 /* SlideMenuesViewController.m in Sources */,
+				54689DC61F3DA09500F42967 /* ErWeiCodeBtn.m in Sources */,
+				54AAB8D21F286AE0009F62D5 /* LightManagerController.m in Sources */,
+				546A001B1F2B2B2B000F588A /* NSObject+Tips.m in Sources */,
+				54A374071F443813006756B8 /* LightStateCell.m in Sources */,
+				541A6D031F3D99EB00ABEB4A /* UIButton+IndexPath.m in Sources */,
+				54A3740A1F4568B6006756B8 /* MenuGroup.m in Sources */,
+				546A002B1F3056DF000F588A /* NSString+Params.m in Sources */,
+				548FB0C51F4A6EBE0053EE89 /* NormalViewController.m in Sources */,
+				542079181F37F04A0040384B /* SlideMenuCell.m in Sources */,
+				546A001F1F2B33DB000F588A /* User.m in Sources */,
+				54805C5D1F346A4700C4374C /* Cities.m in Sources */,
+				541A6CFE1F3CBC9300ABEB4A /* CityBtn.m in Sources */,
+				54805C601F346AFB00C4374C /* Area.m in Sources */,
+				54805C461F323A2F00C4374C /* MapViewController.m in Sources */,
+				54B4930E1F430BD60053A951 /* LightMap.m in Sources */,
+				542A8F1E1F414835005B2032 /* LightAddViewController.m in Sources */,
+				54D9DD8C1F2714000085B4DA /* StreetLight.xcdatamodeld in Sources */,
+				546A00221F2F1502000F588A /* SysInfoUpdate.m in Sources */,
+				548CCB211F42C1B0006C2397 /* LightType.m in Sources */,
+				548FB0BC1F46CDD30053EE89 /* LightControllCell.m in Sources */,
+				54689DC91F3DA88300F42967 /* LightInfoTextField.m in Sources */,
+				54C81EE61F274B2F007AB63D /* HttpTool.m in Sources */,
+				54AAB8D81F286BA8009F62D5 /* WarnWatchController.m in Sources */,
+				541A6CF81F3AFF1D00ABEB4A /* LightInfoUpdateController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D9DD931F2714000085B4DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D9DD9C1F2714000085B4DA /* StreetLightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D9DD9E1F2714000085B4DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D9DDA71F2714000085B4DA /* StreetLightUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54D9DD991F2714000085B4DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54D9DD7A1F2714000085B4DA /* StreetLight */;
+			targetProxy = 54D9DD981F2714000085B4DA /* PBXContainerItemProxy */;
+		};
+		54D9DDA41F2714000085B4DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54D9DD7A1F2714000085B4DA /* StreetLight */;
+			targetProxy = 54D9DDA31F2714000085B4DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		540C18461F29862900620EE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540C18471F29862900620EE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54D9DD8F1F2714000085B4DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54D9DD901F2714000085B4DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54D9DDA91F2714000085B4DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54D9DDAA1F2714000085B4DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54D9DDAC1F2714000085B4DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC40CACF3785F726E3CD771 /* Pods-StreetLight.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/StreetLight/StreetLight.pch";
+				INFOPLIST_FILE = StreetLight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.street.StreetLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		54D9DDAD1F2714000085B4DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8570F89D0EEA367E479BBF96 /* Pods-StreetLight.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 731924600@qq.com (F5E43WH6T9)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/StreetLight/StreetLight.pch";
+				INFOPLIST_FILE = StreetLight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.street.StreetLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		54D9DDAF1F2714000085B4DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StreetLightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.street.StreetLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreetLight.app/StreetLight";
+			};
+			name = Debug;
+		};
+		54D9DDB01F2714000085B4DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StreetLightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.street.StreetLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreetLight.app/StreetLight";
+			};
+			name = Release;
+		};
+		54D9DDB21F2714000085B4DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StreetLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.street.StreetLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StreetLight;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		54D9DDB31F2714000085B4DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StreetLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.street.StreetLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StreetLight;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54D9DD761F2714000085B4DA /* Build configuration list for PBXProject "StreetLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D9DDA91F2714000085B4DA /* Debug */,
+				54D9DDAA1F2714000085B4DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54D9DDAB1F2714000085B4DA /* Build configuration list for PBXNativeTarget "StreetLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D9DDAC1F2714000085B4DA /* Debug */,
+				54D9DDAD1F2714000085B4DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54D9DDAE1F2714000085B4DA /* Build configuration list for PBXNativeTarget "StreetLightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D9DDAF1F2714000085B4DA /* Debug */,
+				54D9DDB01F2714000085B4DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54D9DDB11F2714000085B4DA /* Build configuration list for PBXNativeTarget "StreetLightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D9DDB21F2714000085B4DA /* Debug */,
+				54D9DDB31F2714000085B4DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54D9DD8A1F2714000085B4DA /* StreetLight.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54D9DD8B1F2714000085B4DA /* StreetLight.xcdatamodel */,
+			);
+			currentVersion = 54D9DD8B1F2714000085B4DA /* StreetLight.xcdatamodel */;
+			path = StreetLight.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 54D9DD731F2714000085B4DA /* Project object */;
+}
